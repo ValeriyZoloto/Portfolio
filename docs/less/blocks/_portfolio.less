@@ -1,0 +1,70 @@
+.portfolio {
+  padding-top: 110px;
+  padding-bottom: 0;
+  margin: auto;
+  background-image: url(../img/fon/bgportf.png);
+  background-size: auto;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: contain;
+  overflow: hidden;
+}
+
+.bottom-line {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  transition: 0.5s;
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 15px;
+    left: -5px;
+    right: -5px;
+    height: 12px;
+    background-color: #fbdc4d;
+    z-index: -1;
+    transition: 0.5s;
+  }
+
+  &:hover:after {
+    background-color: var(--hover);
+  }
+}
+
+.title-portf {
+  margin-bottom: 62px;
+  margin-left: 0;
+}
+.portfolio-works {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 46px;
+}
+
+.portfolio-block-toggle_item {
+  margin-right: 68px;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--toggl);
+  border: none;
+  background-color: var(--bgportf);
+  cursor: pointer;
+  transition: 0.5s;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    color: var(--togglhov);
+  }
+  &:active {
+    color: var(--togglhov);
+  }
+}
+
+.control-active {
+  color: #000000;
+}

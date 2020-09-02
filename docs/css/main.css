@@ -594,4 +594,226 @@ textarea {
 .icons-item__vb:hover {
   color: #6c19b9;
 }
+.portfolio {
+  padding-top: 110px;
+  padding-bottom: 0;
+  margin: auto;
+  background-image: url(../img/fon/bgportf.png);
+  background-size: auto;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: contain;
+  overflow: hidden;
+}
+.bottom-line {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.bottom-line:after {
+  content: "";
+  position: absolute;
+  bottom: 15px;
+  left: -5px;
+  right: -5px;
+  height: 12px;
+  background-color: #fbdc4d;
+  z-index: -1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.bottom-line:hover:after {
+  background-color: var(--hover);
+}
+.title-portf {
+  margin-bottom: 62px;
+  margin-left: 0;
+}
+.portfolio-works {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 46px;
+}
+.portfolio-block-toggle_item {
+  margin-right: 68px;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--toggl);
+  border: none;
+  background-color: var(--bgportf);
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.portfolio-block-toggle_item:last-child {
+  margin-right: 0;
+}
+.portfolio-block-toggle_item:hover {
+  color: var(--togglhov);
+}
+.portfolio-block-toggle_item:active {
+  color: var(--togglhov);
+}
+.control-active {
+  color: #000000;
+}
+#portfolio-projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.portfolio-cards_content {
+  margin-bottom: 155px;
+}
+.portfolio-card {
+  margin: auto;
+  max-width: 360px;
+  height: 320px;
+  margin-bottom: 0;
+}
+.portfolio-card_poster {
+  margin-bottom: 30px;
+  display: block;
+  position: relative;
+  background-color: var(--bgcard);
+  overflow: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.portfolio-card_poster:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(239, 215, 95, 0.85);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: translateY(105%);
+          transform: translateY(105%);
+}
+.portfolio-card_poster:hover:before {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+.more-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 51px;
+  font-size: 22px;
+  font-weight: 700;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 30px;
+  color: var(--cardbtnhov);
+  background-color: #fff;
+  border: none;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.more-btn:hover {
+  background-color: var(--cardbtnhov);
+  color: #fff;
+}
+.more-btn:active {
+  background-color: var(--cardbtnactv);
+  color: #fff;
+}
+.portfolio-card_poster:hover .more-btn {
+  opacity: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.portfolio-card_poster img {
+  display: block;
+  height: 360px;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: var(--btnbg);
+}
+.portfolio-card--big {
+  max-width: 555px;
+  margin-bottom: 50px;
+  height: 480px;
+}
+.portfolio-card--big:last-child {
+  margin-bottom: 0;
+}
+.portfolio-card_descrip a {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 10px;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #000;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.portfolio-card_descrip a:after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  bottom: 1px;
+  left: 0;
+  border-bottom: solid 2px #ed574f;
+  width: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.portfolio-card_descrip a:hover:after {
+  width: 100%;
+  color: #ed574f;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.portfolio-card_descrip a:hover {
+  color: #ed574f;
+}
+.portfolio-card--big .portfolio-card_descrip a {
+  font-size: 32px;
+}
+.portfolio-card--big .portfolio-card_descrip p {
+  font-size: 26px;
+}
+.portfolio-card_descrip p {
+  margin-top: 9px;
+  font-size: 20px;
+  font-weight: 100;
+  color: #585858;
+}
+.display {
+  display: block;
+}
 /*# sourceMappingURL=main.css.map */
