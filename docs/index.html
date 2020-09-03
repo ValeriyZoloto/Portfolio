@@ -43,11 +43,11 @@
             class="logo sidebar-logo"
             >ВЗ</a
           >
-          <a href="#" class="header-link decktop">Главная</a>
+          <a href="#header" class="header-link decktop">Главная</a>
           <a href="#portfolio" class="header-link more-line" target="_blank"
             >Работы</a
           >
-          <a href="#" class="header-link more-line" target="_blank">Контакты</a>
+          <a href="#contacts" class="header-link more-line" target="_blank">Контакты</a>
           <div class="sidebar">
             <a
               href="viber://chat?number=%2B79213091925"
@@ -442,6 +442,131 @@
       </div>
     </section>
     <!-- //Секция Как я работаю -->
+    <!--  Секция-Контакты  -->
+    <section class="contacts" id="contacts">
+      <div class="container">
+        <div class="title2 title-contacts"><span>Контакты</span></div>
+        <!-- Contacts-content -->
+        <div class="contacts-content">
+          <!-- Левая колонка -->
+          <div class="contacts-descrip">
+            <div class="contacts-descrip_text">
+              <p>
+                Если вы ищите специалиста по верстке сайтов или для работы над
+                проектом — напишите мне.
+              </p>
+            </div>
+
+            <div class="contacts-descrip_item">
+              <div class="more-contacts">
+                <span>Email</span>
+                <a href="mailto:leshikzoloto@gmail.com"
+                  >leshikzoloto@gmail.com</a
+                >
+              </div>
+
+              <div class="more-contacts">
+                <span>Телефон</span>
+                <a href="tel:+79213091925">+ 7 (921)309 19 25</a>
+              </div>
+
+              <div class="more-contacts">
+                <span>Адрес</span>
+                <p>Россия, Санкт-Петербург</p>
+              </div>
+            </div>
+
+            <div class="skills-icons more-skills">
+              <a
+                href="whatsapp://chat?number=%2B79213091925"
+                class="skills-icons_item icons-wp"
+              >
+                <i class="fab fa-whatsapp"></i>
+              </a>
+              <a
+                href="viber://chat?number=%2B79213091925"
+                class="skills-icons_item icons-vb"
+              >
+                <i class="fab fa-viber"></i>
+              </a>
+            </div>
+          </div>
+          <!-- Правая колонка -->
+          <div class="form-column">
+            <form class="contacts-form" id="contacts-form">
+              <input
+                type="hidden"
+                name="project_name"
+                value="https://github.com/ValeriyZoloto/"
+              />
+              <input
+                type="hidden"
+                name="admin_email"
+                value="leshikzoloto@gmail.com"
+              />
+              <input
+                type="hidden"
+                name="email_form"
+                value="leshikzoloto@gmai.com"
+              />
+
+              <div class="contacts-form_item">
+                <input class="form-field" type="text" name="email" />
+                <span class="fake-placeholder">Ваш email</span>
+              </div>
+
+              <div class="contacts-form_item">
+                <input class="form-field" type="text" name="theme" />
+                <span class="fake-placeholder">Тема письма</span>
+              </div>
+
+              <div class="contacts-form_item">
+                <textarea class="form-field" name="message" rows="4"></textarea>
+                <span class="fake-placeholder">Сообщение</span>
+              </div>
+
+              <div class="contacts-form_btn">
+                <a href="#" class="button_main">
+                  <button class="button-3" type="submit" name="form-button">
+                    Отправить
+                  </button>
+                </a>
+              </div>
+            </form>
+            <div id="answer"></div>
+          </div>
+        </div>
+        <!-- // Contacts-content -->
+      </div>
+    </section>
+    <!--// Секция-Контакты  -->
+    <!-- Подвал -->
+    <footer class="footer">
+      <div class="container">
+        <div class="copy">
+          <p>&#169; 2020 — Валерий Золотухин</p>
+        </div>
+        <div class="text">
+          <p>
+            Веб-разработчик из Санкт-Петербурга, занимаюсь версткой и созданием
+            сайтов.
+            <br />Этот сайт сделан в рамках прохождения обучения по верстке на
+            курсах от
+            <a href="https://webcademy.ru/htmlsite/" target="_blank">
+              WebCademy.ru</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Подвал -->
+     <!-- Скрол вверх -->
+    <div id="backTop">
+        <a href="#top">
+            <i class="fas fa-angle-double-up"></i>
+          
+        </a>
+        <!-- //Скрол вверх -->
     <script src="./libs/jquery/jquery-3.0.0.min.js"></script>
     <script src="./libs/mixitup3/mixitup.min.js"></script>
     <script src="./js/main.js"></script>
