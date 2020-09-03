@@ -232,6 +232,26 @@
         <div class="title2 title-portf">
           <span class="bottom-line">Портфолио</span>
         </div>
+        <div class="portfolio-works">
+          <div class="portfolio-works-toggle">
+            <button
+              id="works"
+              class="portfolio-block-toggle_item control-active"
+              data-filter="all"
+            >
+              Все работы
+            </button>
+            <button class="portfolio-block-toggle_item" data-filter=".boots">
+              Bootstrap
+            </button>
+            <button class="portfolio-block-toggle_item" data-filter=".wp">
+              WordPress
+            </button>
+            <button class="portfolio-block-toggle_item" data-filter=".frontend">
+              Frontend
+            </button>
+          </div>
+        </div>
         <!-- Контент -карточки -->
         <div class="portfolio-cards_content">
           <div id="portfolio-projects">
@@ -334,5 +354,6 @@
       </div>
     </section>
     <!-- //Секция Портфолио -->
+    <script src="./libs/mixitup/mixitup.min.js"></script>
   </body>
 </html>

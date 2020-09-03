@@ -666,6 +666,29 @@ textarea {
 .control-active {
   color: #000000;
 }
+.watch-works {
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  color: #039be5;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-decoration: underline;
+}
+.watch-works:hover {
+  color: var(--cardbtnactv);
+  border-color: var(--cardbtnactv);
+}
+@media (min-width: 576px) {
+  .watch-works {
+    margin-left: 125px;
+  }
+}
+@media (min-width: 1200px) {
+  .watch-works {
+    display: none;
+  }
+}
 #portfolio-projects {
   display: -webkit-box;
   display: -ms-flexbox;

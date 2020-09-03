@@ -68,3 +68,23 @@
 .control-active {
   color: #000000;
 }
+.watch-works {
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  color: #039be5;
+  transition: 0.5s;
+  text-decoration: underline;
+  &:hover {
+    color: var(--cardbtnactv);
+    border-color: var(--cardbtnactv);
+  }
+  @media (min-width: 576px) {
+    margin-left: 125px;
+  }
+
+  // Десктоп
+  @media (min-width: 1200px) {
+    display: none;
+  }
+}
