@@ -839,4 +839,199 @@ textarea {
 .display {
   display: block;
 }
+.how-work {
+  padding-top: 140px;
+  padding-bottom: 140px;
+  margin: auto;
+  background-image: url(../img/fon/bg-how2.png);
+  background-size: auto;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: contain;
+  overflow: hidden;
+}
+.howwork-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  max-width: 1005px;
+}
+.item-title {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 151px;
+  font-size: 64px;
+  font-weight: 800;
+  text-align: center;
+  cursor: pointer;
+}
+.item-title:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: -5px;
+  right: -5px;
+  background-color: #fbdc4d;
+  height: 12px;
+  bottom: 18px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.item-title:hover:after {
+  background-color: var(--hover);
+}
+.work-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.work-content_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+  max-width: 530px;
+  padding-bottom: 60px;
+  -webkit-transform: translateX(39%);
+          transform: translateX(39%);
+}
+.work-content_item:after {
+  content: "";
+  position: absolute;
+  left: 31px;
+  bottom: 0;
+  top: 94px;
+  width: 4px;
+  border-radius: 2px;
+  background-color: #e1eef4;
+}
+.work-content_item:last-child:after {
+  display: none;
+}
+.work-content_item:nth-child(odd) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  text-align: right;
+  -webkit-transform: translateX(-46%);
+          transform: translateX(-46%);
+}
+.work-content_item:first-of-type:before {
+  content: "";
+  position: absolute;
+  left: 477px;
+  top: -77px;
+  width: 4px;
+  height: 57px;
+  background-color: #e1eef4;
+}
+.work-content_item:nth-child(odd):after {
+  content: "";
+  position: absolute;
+  left: 477px;
+  bottom: 0;
+  top: 94px;
+  width: 4px;
+  border-radius: 2px;
+  background-color: #e1eef4;
+}
+.work-item-icon {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 74px;
+  height: 74px;
+  border-radius: 28px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 3px 35px 0px rgba(0, 112, 187, 0.35);
+          box-shadow: 0px 3px 35px 0px rgba(0, 112, 187, 0.35);
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.work-item-icon img {
+  width: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.item-text {
+  padding-right: 25px;
+  padding-left: 25px;
+  cursor: pointer;
+}
+.item-text:hover .hover::after {
+  background-color: var(--hover);
+}
+.item-text span {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.item-text .hover {
+  font-weight: 800;
+  font-size: 26px;
+  position: relative;
+  z-index: 2;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  width: 215px;
+}
+.item-text .hover:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: -5px;
+  right: -5px;
+  background-color: #fbdc4d;
+  height: 6px;
+  bottom: 5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.item-text p {
+  margin-bottom: 10px;
+  margin-top: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+.item-text span {
+  font-size: 18px;
+  font-weight: 700;
+}
 /*# sourceMappingURL=main.css.map */
