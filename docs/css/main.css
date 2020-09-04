@@ -183,12 +183,13 @@ textarea {
 }
 .header-foto {
   max-width: 50%;
-  height: 410px;
   margin-bottom: 0;
 }
 .my-foto {
+  -webkit-transform: scale(1);
+          transform: scale(1);
   max-width: 460px;
-  height: auto;
+  height: 410px;
   margin-right: 0;
 }
 .header-desk {
