@@ -477,7 +477,6 @@ textarea {
   font-weight: 700;
   color: #000;
   z-index: 2;
-  margin-right: 72px;
   margin-bottom: 0;
 }
 .header-link:last-child {
@@ -504,6 +503,9 @@ textarea {
   border: dotted #ea736d 2px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+.header-link + .header-link {
+  margin-left: 72px;
 }
 .sidebar-logo {
   margin-bottom: 35px;
