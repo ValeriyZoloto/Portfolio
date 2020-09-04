@@ -1044,8 +1044,7 @@ textarea {
   background-size: auto;
   background-position: center;
   background-repeat: repeat-y;
-  background-size: contain;
-  overflow: hidden;
+  background-color: #f4f8f9;
 }
 .title-contacts {
   text-align: center;
