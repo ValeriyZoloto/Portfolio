@@ -846,12 +846,11 @@ textarea {
   padding-top: 140px;
   padding-bottom: 140px;
   margin: auto;
+  max-width: 1600px;
   background-image: url(../img/fon/bg-how2.png);
   background-size: auto;
   background-position: center;
-  background-repeat: repeat;
-  background-size: contain;
-  overflow: hidden;
+  background-repeat: repeat-y;
 }
 .howwork-content {
   display: -webkit-box;
