@@ -314,6 +314,7 @@ textarea {
   width: 580px;
   font-size: 24px;
   font-weight: 400;
+  letter-spacing: -0.6px;
   margin-bottom: 42px;
   color: var(--text);
 }
@@ -505,7 +506,7 @@ textarea {
   transition: 0.5s;
 }
 .header-link + .header-link {
-  margin-left: 72px;
+  margin-left: 78px;
 }
 .sidebar-logo {
   margin-bottom: 35px;
