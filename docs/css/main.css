@@ -813,6 +813,7 @@ textarea {
 }
 .portfolio-card_poster img {
   display: block;
+  min-width: 555px;
   height: 360px;
   -o-object-position: center;
      object-position: center;
@@ -824,7 +825,7 @@ textarea {
   background-color: var(--btnbg);
 }
 .portfolio-card--big {
-  max-width: 555px;
+  max-width: 530px;
   margin-bottom: 50px;
   height: 480px;
 }
