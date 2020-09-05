@@ -195,12 +195,13 @@ textarea {
 .header-desk {
   max-width: 50%;
   padding-top: 30px;
+  padding-bottom: 65px;
 }
 .header-name {
   margin-bottom: 18px;
   font-size: 90px;
   font-weight: 900;
-  line-height: 1.2;
+  line-height: 1.1;
 }
 .my-name {
   position: relative;
@@ -231,7 +232,7 @@ textarea {
 .header-text p {
   font-size: 24px;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 36px;
   color: var(--text);
   width: 500px;
 }
