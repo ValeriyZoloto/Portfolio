@@ -611,18 +611,26 @@ textarea {
 }
 .icons-item__wp:hover {
   color: #0fa728;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 .icons-item__gh:hover {
   color: var(--icongh);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 .icons-item__gh:active {
   color: var(--icongh);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 .icons-item__vb {
   width: 30px;
 }
 .icons-item__vb:hover {
   color: #6c19b9;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 .portfolio {
   padding-top: 110px;
