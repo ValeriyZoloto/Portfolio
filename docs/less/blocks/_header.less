@@ -23,6 +23,32 @@
 .header-foto {
   max-width: 50%;
   margin-bottom: 0;
+  &:before {
+    content: "";
+    background-image: -moz-linear-gradient(
+      90deg,
+      rgb(244, 248, 249) 0%,
+      rgba(244, 248, 249, 0) 100%
+    );
+    background-image: -webkit-linear-gradient(
+      90deg,
+      rgb(244, 248, 249) 0%,
+      rgba(244, 248, 249, 0) 100%
+    );
+    background-image: -ms-linear-gradient(
+      90deg,
+      rgb(244, 248, 249) 0%,
+      rgba(244, 248, 249, 0) 100%
+    );
+    opacity: 0.5;
+    position: absolute;
+
+    top: 12%;
+    left: 47%;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
 }
 
 .my-foto  {
