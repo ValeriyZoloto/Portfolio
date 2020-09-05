@@ -259,6 +259,12 @@ textarea {
   border: none;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  font-size: 22px;
+  font-family: "M PLUS 1p", sans-serif;
+  color: #000000;
+  font-weight: 700;
+  line-height: 1.2;
+  cursor: pointer;
 }
 .button-1:hover {
   background-color: var(--btnhov);
@@ -274,6 +280,12 @@ textarea {
   border-radius: 30px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  font-size: 22px;
+  font-family: "M PLUS 1p", sans-serif;
+  color: #000000;
+  font-weight: 700;
+  line-height: 1.2;
+  cursor: pointer;
 }
 .button-2:hover {
   border-color: var(--btnconthov);
