@@ -615,16 +615,16 @@ textarea {
     max-width: 360px;
   }
 }
-.more-skills {
+.more {
   margin-bottom: 12px;
 }
 @media (min-width: 768px) {
-  .more-skills {
+  .more {
     margin-bottom: 13px;
   }
 }
 @media (min-width: 1200px) {
-  .more-skills {
+  .more {
     margin-bottom: 29px;
   }
 }
