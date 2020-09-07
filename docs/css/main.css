@@ -598,7 +598,7 @@ textarea {
   .skills-list_item:before {
     content: "__";
     position: relative;
-    left: -1px;
+    left: 0px;
     bottom: 10px;
   }
 }
@@ -628,7 +628,7 @@ textarea {
     margin-bottom: 29px;
   }
 }
-.skills-icons_item {
+.icons_item {
   position: relative;
   display: inline-block;
   width: 50px;
@@ -639,24 +639,24 @@ textarea {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-.skills-icons_item:last-child {
+.icons_item:last-child {
   margin-right: 0;
 }
-.skills-icons_item:hover {
+.icons_item:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 @media (min-width: 768px) {
-  .skills-icons_item {
+  .icons_item {
     margin-right: 26px;
   }
 }
 @media (min-width: 1200px) {
-  .skills-icons_item {
+  .icons_item {
     margin-right: 30px;
   }
 }
-.skills-icons a {
+.icons a {
   color: #fff;
   font-size: 22px;
 }
@@ -741,6 +741,7 @@ textarea {
   font-size: 42px;
   font-weight: 900;
   color: #000000;
+  line-height: 1.2;
   text-transform: uppercase;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -1592,7 +1593,7 @@ textarea {
 .work-content_item:after {
   content: "";
   position: absolute;
-  left: 31px;
+  left: 37px;
   bottom: 0;
   top: 94px;
   width: 4px;
@@ -1672,7 +1673,7 @@ textarea {
   .work-content_item:first-of-type:before {
     content: "";
     position: absolute;
-    left: 477px;
+    left: 490px;
     top: -77px;
     width: 4px;
     height: 57px;
@@ -1681,7 +1682,7 @@ textarea {
   .work-content_item:nth-child(odd):after {
     content: "";
     position: absolute;
-    left: 477px;
+    left: 488px;
     bottom: 0;
     top: 94px;
     width: 4px;
