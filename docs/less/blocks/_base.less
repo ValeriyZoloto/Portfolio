@@ -23,11 +23,15 @@ body {
 }
 
 #page-nav {
-  display: block;
-  position: fixed;
-  z-index: 100;
-  right: 86px;
-  top: 39%;
+  display: none;
+  // Десктоп
+  @media (min-width: 1200px) {
+    display: block;
+    position: fixed;
+    z-index: 100;
+    right: 86px;
+    top: 39%;
+  }
 }
 
 #page-nav li {
@@ -149,8 +153,28 @@ textarea {
   margin-left: auto;
   margin-right: auto;
   padding: 0 15px;
-  position: relative;
-  z-index: 2;
+
+  @media (min-width: 576px) {
+    max-width: 540px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  // Планшет
+  @media (min-width: 768px) {
+    max-width: 720px;
+  }
+
+  @media (min-width: 992px) {
+    max-width: 960px;
+  }
+
+  // Десктоп
+  @media (min-width: 1200px) {
+    max-width: 1140px;
+    position: relative;
+    z-index: 2;
+  }
 }
 
 .button_main button {
@@ -167,6 +191,16 @@ textarea {
 }
 
 .title2 {
-  font-size: 64px;
+  font-size: 42px;
   font-weight: 800;
+
+  // Планшет
+  @media (min-width: 768px) {
+    font-size: 52px;
+  }
+
+  // Десктоп
+  @media (min-width: 1200px) {
+    font-size: 64px;
+  }
 }

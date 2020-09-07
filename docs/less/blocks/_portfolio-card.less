@@ -9,19 +9,35 @@
 }
 
 .portfolio-cards_content {
-  margin-bottom: 155px;
+  // Десктоп
+  @media (min-width: 1200px) {
+    margin-bottom: 155px;
+  }
 }
 
 .portfolio-card {
+  max-width: 290px;
   margin: auto;
-  max-width: 360px;
-  height: 320px;
-  margin-bottom: 0;
+  height: 300px;
+  margin-bottom: 22px;
+
+  // Планшет
+  @media (min-width: 768px) {
+    max-width: 340px;
+    height: 340px;
+    margin-bottom: 0;
+  }
+
+  // Десктоп
+  @media (min-width: 1200px) {
+    max-width: 360px;
+    height: 320px;
+  }
 }
 
 .portfolio-card_poster {
+  margin-bottom: 21px;
   display: block;
-  margin-bottom: 30px;
   position: relative;
   background-color: var(--bgcard);
   overflow: hidden;
@@ -40,6 +56,15 @@
   }
   &:hover:before {
     transform: translateY(0);
+  }
+  // Планшет
+  @media (min-width: 768px) {
+    margin-bottom: 25px;
+  }
+
+  // Десктоп
+  @media (min-width: 1200px) {
+    margin-bottom: 30px;
   }
 }
 
@@ -79,22 +104,33 @@
 
 .portfolio-card_poster img {
   display: block;
-  min-width: 555px;
-  height: 360px;
   object-position: center;
   object-fit: cover;
   overflow: hidden;
   transition: 0.3s;
   background-color: var(--btnbg);
+  // Планшет
+  @media (min-width: 768px) {
+    height: 235px;
+  }
+
+  // Десктоп
+  @media (min-width: 1200px) {
+    min-width: 555px;
+    height: 360px;
+  }
 }
 
 .portfolio-card--big {
-  max-width: 530px;
-  margin-bottom: 50px;
-  height: 480px;
+  // Десктоп
+  @media (min-width: 1200px) {
+    max-width: 530px;
+    margin-bottom: 50px;
+    height: 480px;
 
-  &:last-child {
-    margin-bottom: 0;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -103,7 +139,7 @@
   z-index: 2;
 
   margin-bottom: 10px;
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 700;
   line-height: 1.2;
   color: #000;
@@ -130,23 +166,70 @@
   &:hover {
     color: #ed574f;
   }
+  // Планшет
+  @media (min-width: 768px) {
+    font-size: 24px;
+  }
+
+  // Десктоп
+  @media (min-width: 1200px) {
+    font-size: 26px;
+  }
 }
 
 .portfolio-card--big .portfolio-card_descrip a {
-  font-size: 32px;
+  font-size: 22px;
+
+  // Планшет
+  @media (min-width: 768px) {
+    font-size: 24px;
+  }
+
+  // Десктоп
+  @media (min-width: 1200px) {
+    font-size: 32px;
+  }
 }
 
 .portfolio-card--big .portfolio-card_descrip p {
-  font-size: 26px;
+  font-size: 16px;
+
+  // Планшет
+  @media (min-width: 768px) {
+    font-size: 18px;
+  }
+
+  // Десктоп
+  @media (min-width: 1200px) {
+    font-size: 26px;
+  }
 }
 
 .portfolio-card_descrip p {
   margin-top: 9px;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 100;
   color: #585858;
+
+  // Планшет
+  @media (min-width: 768px) {
+    font-size: 18px;
+  }
+
+  // Десктоп
+  @media (min-width: 1200px) {
+    font-size: 20px;
+  }
 }
 
 .display {
-  display: block;
+  // Планшет
+  @media (min-width: 768px) {
+    display: none;
+  }
+
+  // Десктоп
+  @media (min-width: 1200px) {
+    display: block;
+  }
 }
