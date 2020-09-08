@@ -205,7 +205,7 @@ textarea {
 @media (min-width: 768px) {
   .header {
     padding-top: 30px;
-    padding-bottom: 142px;
+    padding-bottom: 74px;
   }
 }
 @media (min-width: 1200px) {
@@ -253,7 +253,7 @@ textarea {
   }
 }
 .header-foto {
-  margin-bottom: 50px;
+  margin-bottom: 33px;
 }
 @media (min-width: 768px) {
   .header-foto {
@@ -282,6 +282,9 @@ textarea {
 }
 .my-foto {
   max-width: 290px;
+  height: 290px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 @media (min-width: 768px) {
   .my-foto {
@@ -313,7 +316,7 @@ textarea {
   }
 }
 .header-name {
-  margin-bottom: 52px;
+  margin-bottom: 25px;
   font-size: 42px;
   font-weight: 900;
   line-height: 1.2;
@@ -328,7 +331,7 @@ textarea {
   .header-name {
     margin-bottom: 36px;
     font-size: 90px;
-    line-height: 1.1;
+    line-height: 1.2;
   }
 }
 .my-name {
@@ -390,7 +393,7 @@ textarea {
 .header-text p {
   font-size: 18px;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 1.6;
   text-shadow: 0px 3px 42.32px rgba(255, 255, 255, 0.004);
   color: var(--text);
   width: 283px;
@@ -547,7 +550,7 @@ textarea {
   }
 }
 .skills {
-  margin-bottom: 22px;
+  margin-bottom: 17px;
 }
 @media (min-width: 768px) {
   .skills {
@@ -564,13 +567,13 @@ textarea {
 @media (min-width: 768px) {
   .title3 {
     font-size: 32px;
-    margin-bottom: 22px;
+    margin-bottom: 21px;
   }
 }
 @media (min-width: 1200px) {
   .title3 {
     font-size: 40px;
-    margin-bottom: 33px;
+    margin-bottom: 22px;
   }
 }
 .skills-list {
@@ -586,10 +589,10 @@ textarea {
 }
 @media (min-width: 1200px) {
   .skills-list {
-    width: 599px;
+    width: 600px;
     font-size: 24px;
     letter-spacing: -0.6px;
-    margin-bottom: 111px;
+    margin-bottom: 40px;
   }
 }
 .skills-list_item {
@@ -632,7 +635,7 @@ textarea {
 }
 @media (min-width: 768px) {
   .more {
-    margin-bottom: 13px;
+    margin-bottom: 18px;
   }
 }
 @media (min-width: 1200px) {
@@ -729,7 +732,7 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 42px;
+  margin-bottom: 28px;
 }
 @media (min-width: 1430px) {
   .header-nav {
@@ -744,7 +747,7 @@ textarea {
 }
 @media (min-width: 1200px) {
   .header-nav {
-    margin-bottom: 121px;
+    margin-bottom: 112px;
   }
 }
 .logo {
@@ -1087,13 +1090,13 @@ textarea {
 }
 @media (min-width: 768px) {
   .portfolio {
-    padding-top: 75px;
+    padding-top: 61px;
     padding-bottom: 75px;
   }
 }
 @media (min-width: 1200px) {
   .portfolio {
-    padding-top: 110px;
+    padding-top: 99px;
     padding-bottom: 0;
   }
 }
@@ -1157,13 +1160,13 @@ textarea {
 }
 @media (min-width: 768px) {
   .title-portf {
-    margin-bottom: 50px;
+    margin-bottom: 43px;
     margin-left: 0;
   }
 }
 @media (min-width: 1200px) {
   .title-portf {
-    margin-bottom: 62px;
+    margin-bottom: 51px;
   }
 }
 .portfolio-works {
@@ -1369,8 +1372,8 @@ textarea {
 }
 @media (min-width: 1200px) {
   .portfolio-card_poster img {
-    min-width: 555px;
-    height: 360px;
+    min-width: 530px;
+    height: 370px;
   }
 }
 @media (min-width: 1200px) {
@@ -1439,6 +1442,7 @@ textarea {
 }
 .portfolio-card--big .portfolio-card_descrip p {
   font-size: 16px;
+  margin: 0;
 }
 @media (min-width: 768px) {
   .portfolio-card--big .portfolio-card_descrip p {
@@ -1494,8 +1498,8 @@ textarea {
 }
 @media (min-width: 1200px) {
   .how-work {
-    padding-top: 140px;
-    padding-bottom: 140px;
+    padding-top: 126px;
+    padding-bottom: 25px;
   }
 }
 .howwork-content {
@@ -1565,7 +1569,7 @@ textarea {
 }
 @media (min-width: 1200px) {
   .item-title {
-    margin-bottom: 151px;
+    margin-bottom: 142px;
     font-size: 64px;
   }
   .item-title:after {
@@ -1810,6 +1814,7 @@ textarea {
 @media (min-width: 1200px) {
   .item-text p {
     font-size: 18px;
+    line-height: 1.2;
   }
 }
 .item-text span {
