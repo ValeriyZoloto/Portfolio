@@ -14,13 +14,13 @@
   // Планшет
   @media (min-width: 768px) {
     padding-top: 30px;
-    padding-bottom: 80px;
+    padding-bottom: 142px;
   }
 
   // Десктоп
   @media (min-width: 1200px) {
     padding-top: 65px;
-    padding-bottom: 230px;
+    padding-bottom: 240px;
   }
 }
 //     HEADER CONTENT
@@ -43,7 +43,12 @@
     margin-bottom: 0;
   }
 }
-
+.header-logo {
+  // Десктоп
+  @media (min-width: 1200px) {
+    margin-right: 23px;
+  }
+}
 .header-foto {
   margin-bottom: 50px;
 
@@ -51,12 +56,14 @@
   @media (min-width: 768px) {
     max-width: 50%;
     margin-bottom: 0;
+    padding-top: 31px;
   }
 
   // Десктоп
   @media (min-width: 1200px) {
     position: relative;
     z-index: 2;
+    padding-top: 0;
     &:before {
       content: "";
       background-image: -moz-linear-gradient(
@@ -92,6 +99,7 @@
   // Планшет
   @media (min-width: 768px) {
     margin-right: 40px;
+    height: 289px;
   }
 
   // Десктоп
@@ -108,7 +116,7 @@
   // Планшет
   @media (min-width: 768px) {
     max-width: 50%;
-    padding-top: 30px;
+    padding-top: 22px;
   }
   // Десктоп
   @media (min-width: 1200px) {
@@ -120,18 +128,19 @@
   margin-bottom: 52px;
   font-size: 42px;
   font-weight: 900;
-  line-height: 1.1;
+  line-height: 1.2;
 
   // Планшет
   @media (min-width: 768px) {
-    margin-bottom: 48px;
+    margin-bottom: 20px;
     font-size: 52px;
   }
 
   // Десктоп
   @media (min-width: 1200px) {
-    margin-bottom: 18px;
+    margin-bottom: 36px;
     font-size: 90px;
+    line-height: 1.1;
   }
 }
 
@@ -199,7 +208,8 @@
 .header-text p {
   font-size: 18px;
   font-weight: 500;
-  line-height: 1.66;
+  line-height: 1.5;
+  text-shadow: 0px 3px 42.32px rgba(255, 255, 255, 0.004);
   color: var(--text);
   width: 283px;
 
@@ -210,6 +220,7 @@
   // Планшет
   @media (min-width: 768px) {
     width: 340px;
+    line-height: 1.667;
   }
 
   @media (min-width: 992px) {
@@ -237,7 +248,7 @@
 
 .button-1 {
   padding: 19px 41px;
-  margin-right: 22px;
+  margin-right: 20px;
   background-color: var(--btnbg);
   border-radius: 30px;
   border: none;
@@ -296,13 +307,14 @@
   // Планшет
   @media (min-width: 768px) {
     transform: scale(1);
-    margin-bottom: 0;
+    margin-bottom: -15px;
   }
 
   // Десктоп
   @media (min-width: 1200px) {
     max-width: 1600px;
     margin-top: -96px;
+    margin-bottom: 80px;
   }
 }
 
@@ -350,7 +362,7 @@
   // Десктоп
   @media (min-width: 1200px) {
     font-size: 40px;
-    margin-bottom: 26px;
+    margin-bottom: 33px;
   }
 }
 
@@ -363,7 +375,7 @@
   // Планшет
   @media (min-width: 768px) {
     margin-bottom: 0;
-    width: 300px;
+    width: 330px;
   }
 
   // Десктоп
@@ -371,7 +383,7 @@
     width: 599px;
     font-size: 24px;
     letter-spacing: -0.6px;
-    margin-bottom: 42px;
+    margin-bottom: 111px;
   }
 }
 

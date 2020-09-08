@@ -8,6 +8,7 @@
       href="./fonts/mplus1p.css"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./libs/fontawesome css/all.min.css" />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
@@ -43,7 +44,7 @@
             class="logo sidebar-logo"
             >ВЗ</a
           >
-          <a href="#header" class="header-link decktop">Главная</a>
+          <a href="index.html" class="header-link decktop">Главная</a>
           <a href="#portfolio" class="header-link more-line" target="_blank"
             >Работы</a
           >
@@ -153,7 +154,7 @@
             </h1>
             <div class="header-text">
               <p>
-                Верстальщик сайтов, веб-разработчик.Оперативная верстка. Работаю
+                Верстальщик сайтов, веб-разработчик. Оперативная верстка. Работаю
                 с соблюдением сроков и выполнением ТЗ.
               </p>
             </div>
@@ -180,7 +181,7 @@
 
       <!-- Что я умею    На связи -->
       <div class="container">
-        <div class="header-skills">
+        <div class="header-skills"data-aos="zoom-in" data-aos-offset="200" data-aos-duration="1000" id="meet">
           <div id="skills" class="skills">
             <h3 class="title3">Что я умею:</h3>
             <ul class="skills-list">
@@ -366,7 +367,7 @@
               <div class="work-item-icon">
                 <img src="./img/icons-how/layers.png" alt="Иконка" />
               </div>
-              <div class="item-text">
+              <div class="item-text"data-aos="fade-right" data-aos-offset="300" data-aos-duration="1000">
                 <span class="hover">Оцениваю макет</span>
                 <p>
                   Оцениваю объем работы, сложность, нюансы.
@@ -381,7 +382,7 @@
               <div class="work-item-icon">
                 <img src="./img/icons-how/chart.png" alt="Иконка" />
               </div>
-              <div class="item-text">
+              <div class="item-text" data-aos="fade-left" data-aos-offset="300" data-aos-duration="1000">
                 <span class="hover">ТЗ,смета и график работ</span>
                 <p>
                   Согласовываем техническое задание и график работ по проекту.
@@ -396,7 +397,7 @@
               <div class="work-item-icon">
                 <img src="./img/icons-how/hours.png" alt="Иконка" />
               </div>
-              <div class="item-text">
+              <div class="item-text" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1000">
                 <span class="hover">Вы держите руку на пульсе</span>
                 <p>
                   Выдаю клиенту доступ к GitHub репозиторию. Вы в любое время
@@ -411,7 +412,7 @@
               <div class="work-item-icon">
                 <img src="./img/icons-how/code.png" alt="Иконка" />
               </div>
-              <div class="item-text">
+              <div class="item-text" data-aos="fade-left" data-aos-offset="300" data-aos-duration="1000">
                 <span class="hover">Выполняю каждый этап</span>
                 <p>
                   Поочередно выполняю каждый этап работы. Передаю результаты.
@@ -426,7 +427,7 @@
               <div class="work-item-icon">
                 <img src="./img/icons-how/diamond.png" alt="Иконка" />
               </div>
-              <div class="item-text">
+              <div class="item-text" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1000">
                 <span class="hover">Финальное ревью проекта</span>
                 <p>
                   Проект готов. Финальное ревью и полировка до идеального
@@ -493,7 +494,7 @@
           </div>
           <!-- Правая колонка -->
           <div class="form-column">
-            <form class="contacts-form" id="contacts-form">
+            <form class="contacts-form" data-aos="zoom-in" data-aos-offset="300" data-aos-duration="1000" id="contact-form">
               <input
                 type="hidden"
                 name="project_name"
@@ -568,6 +569,10 @@
         </a>
         <!-- //Скрол вверх -->
     <script src="./libs/jquery/jquery-3.0.0.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
     <script src="./libs/mixitup3/mixitup.min.js"></script>
     <script src="./libs/nav.js/nav.js"></script>
     <script src="./js/main.js"></script>
