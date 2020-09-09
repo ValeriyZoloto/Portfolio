@@ -209,13 +209,21 @@
   }
 }
 
-.footer-portfolio-content_desc p a {
+.footer-portfolio-content_desc a {
+  display: inline-block;
+  text-decoration: none;
   color: var(--email);
   width: fit-content;
+  cursor: pointer;
   transition: 0.5s;
   &:hover {
-    border-color: #039be5;
+    color: var(--mailhov);
     text-decoration: underline;
+    transition: 0.5s;
+  }
+  &:active {
+    color: #ea655f;
+    transition: 0.5s;
   }
 }
 .footer-main-img {
@@ -224,13 +232,15 @@
   z-index: -1;
 
   // Планшет
-@media (min-width: 768px) { 
+  @media (min-width: 768px) {
     margin: -120px auto 0;
-}
+  }
 
-// Десктоп
-@media (min-width: 1200px) { 
+  // Десктоп
+  @media (min-width: 1200px) {
     margin: -240px auto 0;
+  }
 }
+.header-menu--portfolio {
+  background-color: transparent;
 }
-

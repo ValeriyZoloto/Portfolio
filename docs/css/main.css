@@ -374,7 +374,7 @@ textarea {
   .my-name:after {
     content: "";
     position: absolute;
-    width: 505px;
+    width: 545px;
     bottom: 22px;
     left: -5px;
     right: -5px;
@@ -1301,17 +1301,27 @@ textarea {
     letter-spacing: 0.43px;
   }
 }
-.footer-portfolio-content_desc p a {
+.footer-portfolio-content_desc a {
+  display: inline-block;
+  text-decoration: none;
   color: var(--email);
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  cursor: pointer;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-.footer-portfolio-content_desc p a:hover {
-  border-color: #039be5;
+.footer-portfolio-content_desc a:hover {
+  color: var(--mailhov);
   text-decoration: underline;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.footer-portfolio-content_desc a:active {
+  color: #ea655f;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 .footer-main-img {
   margin: 0 auto 0;
@@ -1327,6 +1337,9 @@ textarea {
   .footer-main-img {
     margin: -240px auto 0;
   }
+}
+.header-menu--portfolio {
+  background-color: transparent;
 }
 #portfolio-projects {
   display: -webkit-box;
@@ -2439,5 +2452,8 @@ input {
 .text a :active {
   color: #ffffff;
   border-color: #ffffff;
+}
+.header-menu--portfolio {
+  background-color: transparent;
 }
 /*# sourceMappingURL=main.css.map */
