@@ -374,7 +374,7 @@ textarea {
   .my-name:after {
     content: "";
     position: absolute;
-    width: 545px;
+    width: 505px;
     bottom: 22px;
     left: -5px;
     right: -5px;
