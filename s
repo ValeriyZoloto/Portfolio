@@ -1,14 +1,15 @@
-.Верстальщик_сайтов___веб_разработчик__Оперативн {
-  font-size: 18px;
-  font-family: "Mplus 1p Medium";
-  color: rgb(57, 63, 71);
-  line-height: 1.667;
-  text-shadow: 0px 3px 42.32px rgba(255, 255, 255, 0.004);
+.Если_вы_ищите_специалиста_по_верстке_сайтов__fr {
+  font-size: 16px;
+  font-family: "Mplus 1p";
+  color: rgb(0, 0, 0);
+  line-height: 1.625;
+  text-align: left;
   position: absolute;
-  left: -32.672px;
-  top: 564.926px;
-  width: 374px;
-  height: 230px;
-  z-index: 29;
+  left: 12.281px;
+  top: 174.927px;
+  width: 291px;
+  height: 91px;
+  z-index: 54;
 }
+
 

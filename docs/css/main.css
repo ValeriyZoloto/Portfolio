@@ -512,7 +512,7 @@ textarea {
   .header-img {
     max-width: 1600px;
     margin-top: -96px;
-    margin-bottom: 80px;
+    margin-bottom: 129px;
   }
 }
 .header-skills {
@@ -573,7 +573,7 @@ textarea {
 @media (min-width: 1200px) {
   .title3 {
     font-size: 40px;
-    margin-bottom: 22px;
+    margin-bottom: 27px;
   }
 }
 .skills-list {
@@ -1683,6 +1683,7 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: auto;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -2094,6 +2095,7 @@ textarea {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.6;
+  letter-spacing: -1.1px;
 }
 @media (min-width: 768px) {
   .contacts-descrip_text {
