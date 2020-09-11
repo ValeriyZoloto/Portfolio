@@ -1303,25 +1303,28 @@ textarea {
 }
 .footer-portfolio-content_desc a {
   display: inline-block;
+  position: relative;
   text-decoration: none;
   color: var(--email);
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   cursor: pointer;
+}
+.footer-portfolio-content_desc a::after {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--mailhov);
+  content: "";
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-.footer-portfolio-content_desc a:hover {
-  color: var(--mailhov);
-  text-decoration: underline;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-.footer-portfolio-content_desc a:active {
-  color: #ea655f;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+.footer-portfolio-content_desc a:hover::after,
+.footer-portfolio-content_desc a :focus::after {
+  width: 100%;
 }
 .footer-main-img {
   margin: 0 auto 0;

@@ -211,20 +211,25 @@
 
 .footer-portfolio-content_desc a {
   display: inline-block;
+  position: relative;
   text-decoration: none;
   color: var(--email);
   width: fit-content;
   cursor: pointer;
-  transition: 0.5s;
-  &:hover {
-    color: var(--mailhov);
-    text-decoration: underline;
+  &::after{
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--mailhov);
+    content: "";
     transition: 0.5s;
   }
-  &:active {
-    color: #ea655f;
-    transition: 0.5s;
-  }
+  &:hover::after,:focus::after{
+      width: 100%;
+  
+}
 }
 .footer-main-img {
   margin: 0 auto 0;
