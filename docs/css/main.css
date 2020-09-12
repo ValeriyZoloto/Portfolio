@@ -190,6 +190,11 @@ textarea {
     font-size: 64px;
   }
 }
+@media (min-width: 1200px) {
+  .fa-angle-double-up::before {
+    display: none;
+  }
+}
 .header {
   max-width: 1600px;
   padding-top: 30px;
@@ -344,7 +349,7 @@ textarea {
 .my-name:after {
   content: "";
   position: absolute;
-  width: 242px;
+  width: auto;
   bottom: 9px;
   left: -5px;
   right: -5px;
@@ -357,11 +362,36 @@ textarea {
 .my-name:hover:after {
   background-color: var(--hover);
 }
+@media (min-width: 462px) {
+  .my-name {
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .my-name:after {
+    content: "";
+    position: absolute;
+    width: auto;
+    bottom: 9px;
+    left: -5px;
+    right: -5px;
+    height: 12px;
+    background-color: #fbdc4d;
+    z-index: -1;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .my-name:hover:after {
+    background-color: var(--hover);
+  }
+}
 @media (min-width: 768px) {
   .my-name:after {
     content: "";
     position: absolute;
-    width: 298px;
+    width: auto;
     bottom: 11px;
     left: -5px;
     right: -5px;
@@ -374,7 +404,7 @@ textarea {
   .my-name:after {
     content: "";
     position: absolute;
-    width: 505px;
+    width: auto;
     bottom: 22px;
     left: -5px;
     right: -5px;
@@ -385,9 +415,28 @@ textarea {
     transition: 0.5s;
   }
 }
+@media (min-width: 600px) {
+  .header-text {
+    max-width: 290px;
+    margin: auto;
+  }
+}
+@media (min-width: 768px) {
+  .header-text {
+    max-width: 328px;
+    margin-bottom: 35px;
+  }
+}
+@media (min-width: 992px) {
+  .header-text {
+    margin-left: 0;
+  }
+}
 @media (min-width: 1200px) {
   .header-text {
+    max-width: 488px;
     margin-bottom: 35px;
+    margin-left: 0;
   }
 }
 .header-text p {
@@ -526,9 +575,6 @@ textarea {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 @media (min-width: 768px) {
   .header-skills {
@@ -909,6 +955,7 @@ textarea {
   }
 }
 .sidebar {
+  margin-left: 78px;
   margin-bottom: 35px;
 }
 .sidebar-icons {
@@ -953,6 +1000,7 @@ textarea {
   background-color: #07791a;
 }
 .sidebar-email {
+  margin-left: 78px;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.2;

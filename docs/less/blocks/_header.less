@@ -154,7 +154,7 @@
   &:after {
     content: "";
     position: absolute;
-    width: 242px;
+    width: auto;
     bottom: 9px;
     left: -5px;
     right: -5px;
@@ -166,13 +166,36 @@
   &:hover:after {
     background-color: var(--hover);
   }
+  @media (min-width: 462px){
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    transition: 0.5s;
+  
+    &:after {
+      content: "";
+      position: absolute;
+      width: auto;
+      bottom: 9px;
+      left: -5px;
+      right: -5px;
+      height: 12px;
+      background-color: #fbdc4d;
+      z-index: -1;
+      transition: 0.5s;
+    }
+    &:hover:after {
+      background-color: var(--hover);
+    }
+
+  }
 
   // Планшет
   @media (min-width: 768px) {
     &:after {
       content: "";
       position: absolute;
-      width: 298px;
+      width: auto;
       bottom: 11px;
       left: -5px;
       right: -5px;
@@ -187,7 +210,7 @@
     &:after {
       content: "";
       position: absolute;
-      width: 505px;
+      width: auto;
       bottom: 22px;
       left: -5px;
       right: -5px;
@@ -200,9 +223,23 @@
 }
 
 .header-text {
+    @media (min-width: 600px){
+        max-width: 290px;
+        margin: auto;
+    }
+    // Планшет
+  @media (min-width: 768px){
+    max-width: 328px;
+    margin-bottom: 35px;
+  }
+  @media (min-width: 992px){
+    margin-left: 0
+  }
   // Десктоп
   @media (min-width: 1200px) {
+    max-width: 488px;
     margin-bottom: 35px;
+    margin-left: 0;
   }
 }
 
@@ -323,7 +360,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+
 
   // Планшет
   @media (min-width: 768px) {
