@@ -1,7 +1,6 @@
 .header-nav {
   max-width: 1400px;
-  padding-left: 15px;
-  padding-right: 15px;
+ 
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -21,9 +20,33 @@
 
   // Десктоп
   @media (min-width: 1200px) {
-    margin-bottom: 112px;
+    margin-bottom: 118px;
   }
 }
+.header-nav--portfolio {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+  
+    @media (min-width: 1430px) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  
+    // Планшет
+    @media (min-width: 768px) {
+      margin-bottom: 39px;
+    }
+  
+    // Десктоп
+    @media (min-width: 1200px) {
+      margin-bottom: 70px;
+    }
+  }
 
 .logo {
   position: relative;
@@ -67,9 +90,9 @@
   z-index: 10;
   display: flex;
   flex-direction: column;
-  padding-left: 40px;
-  padding-top: 30px;
-  max-width: 400px;
+  padding-left: 30px;
+  padding-top: 25px;
+  max-width: 344px;
   width: 100%;
   transform: translateX(100%);
   transition: 0.5s;
@@ -89,6 +112,10 @@
 }
 .header-menu.active {
   transform: translateX(0);
+}
+.header-menu.active .header-link +.header-link{
+    margin-bottom: 22px;   
+    margin-left: 0;
 }
 
 .header-link {
@@ -135,12 +162,14 @@
     }
   }
 }
-.header-link + .header-link {
+.header-link + .header-link  {
+  margin-bottom: 22px;
   margin-left: 78px;
+  
 }
 
 .sidebar-logo {
-  margin-bottom: 35px;
+  margin-bottom: 31px;
 
   // Десктоп
   @media (min-width: 1200px) {
@@ -149,7 +178,7 @@
 }
 
 .decktop {
-  display: none;
+    margin-bottom: 22px;
 
   // Десктоп
   @media (min-width: 1200px) {
@@ -174,8 +203,8 @@
 }
 
 .sidebar {
- margin-left: 78px;
- margin-bottom: 35px;
+margin-top: 21px;
+margin-bottom: 32px;
 }
 .sidebar-icons {
   width: 50px;
@@ -242,6 +271,9 @@
     display: none;
   }
 }
+.header-menu.active .sidebar-email{
+    margin-left: 0;
+}
 
 .header-icons {
   display: none;
@@ -260,6 +292,10 @@
   &:last-child {
     margin-right: 0;
   }
+  &:first-child{
+      position: relative;
+      top: -2px;
+  }
 }
 
 .icons-item svg {
@@ -270,6 +306,10 @@
   &:hover {
     color: rgb(15, 167, 40);
     transition: 0.5s;
+  }
+  &:first-child{
+      position: relative;
+      top: 2px;
   }
 }
 
@@ -303,7 +343,7 @@
 
   // Планшет
   @media (min-width: 768px) {
-    margin-right: 41px;
+    
   }
   @media (min-width: 1200px) {
     display: none;

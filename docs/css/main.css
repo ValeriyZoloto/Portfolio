@@ -188,6 +188,7 @@ textarea {
 @media (min-width: 1200px) {
   .title2 {
     font-size: 64px;
+    text-align: center;
   }
 }
 @media (min-width: 1200px) {
@@ -215,7 +216,7 @@ textarea {
 }
 @media (min-width: 1200px) {
   .header {
-    padding-top: 65px;
+    padding-top: 75px;
     padding-bottom: 240px;
   }
 }
@@ -271,7 +272,7 @@ textarea {
   .header-foto {
     position: relative;
     z-index: 2;
-    padding-top: 0;
+    padding-bottom: 50px;
   }
   .header-foto:before {
     content: "";
@@ -334,7 +335,7 @@ textarea {
 }
 @media (min-width: 1200px) {
   .header-name {
-    margin-bottom: 36px;
+    margin-bottom: 17px;
     font-size: 90px;
     line-height: 1.2;
   }
@@ -342,7 +343,6 @@ textarea {
 .my-name {
   position: relative;
   z-index: 2;
-  cursor: pointer;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -366,7 +366,6 @@ textarea {
   .my-name {
     position: relative;
     z-index: 2;
-    cursor: pointer;
     -webkit-transition: 0.5s;
     transition: 0.5s;
   }
@@ -560,7 +559,7 @@ textarea {
 @media (min-width: 1200px) {
   .header-img {
     max-width: 1600px;
-    margin-top: -96px;
+    margin-top: -127px;
     margin-bottom: 129px;
   }
 }
@@ -619,7 +618,7 @@ textarea {
 @media (min-width: 1200px) {
   .title3 {
     font-size: 40px;
-    margin-bottom: 27px;
+    margin-bottom: 30px;
   }
 }
 .skills-list {
@@ -765,8 +764,6 @@ textarea {
 }
 .header-nav {
   max-width: 1400px;
-  padding-left: 15px;
-  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
   display: -webkit-box;
@@ -793,7 +790,38 @@ textarea {
 }
 @media (min-width: 1200px) {
   .header-nav {
-    margin-bottom: 112px;
+    margin-bottom: 118px;
+  }
+}
+.header-nav--portfolio {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 28px;
+}
+@media (min-width: 1430px) {
+  .header-nav--portfolio {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (min-width: 768px) {
+  .header-nav--portfolio {
+    margin-bottom: 39px;
+  }
+}
+@media (min-width: 1200px) {
+  .header-nav--portfolio {
+    margin-bottom: 70px;
   }
 }
 .logo {
@@ -842,9 +870,9 @@ textarea {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-left: 40px;
-  padding-top: 30px;
-  max-width: 400px;
+  padding-left: 30px;
+  padding-top: 25px;
+  max-width: 344px;
   width: 100%;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
@@ -875,6 +903,10 @@ textarea {
 .header-menu.active {
   -webkit-transform: translateX(0);
           transform: translateX(0);
+}
+.header-menu.active .header-link + .header-link {
+  margin-bottom: 22px;
+  margin-left: 0;
 }
 .header-link {
   position: relative;
@@ -918,10 +950,11 @@ textarea {
   }
 }
 .header-link + .header-link {
+  margin-bottom: 22px;
   margin-left: 78px;
 }
 .sidebar-logo {
-  margin-bottom: 35px;
+  margin-bottom: 31px;
 }
 @media (min-width: 1200px) {
   .sidebar-logo {
@@ -929,7 +962,7 @@ textarea {
   }
 }
 .decktop {
-  display: none;
+  margin-bottom: 22px;
 }
 @media (min-width: 1200px) {
   .decktop {
@@ -955,8 +988,8 @@ textarea {
   }
 }
 .sidebar {
-  margin-left: 78px;
-  margin-bottom: 35px;
+  margin-top: 21px;
+  margin-bottom: 32px;
 }
 .sidebar-icons {
   width: 50px;
@@ -1019,6 +1052,9 @@ textarea {
     display: none;
   }
 }
+.header-menu.active .sidebar-email {
+  margin-left: 0;
+}
 .header-icons {
   display: none;
 }
@@ -1038,6 +1074,10 @@ textarea {
 .icons-item:last-child {
   margin-right: 0;
 }
+.icons-item:first-child {
+  position: relative;
+  top: -2px;
+}
 .icons-item svg {
   fill: #000000;
 }
@@ -1045,6 +1085,10 @@ textarea {
   color: #0fa728;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+.icons-item__wp:first-child {
+  position: relative;
+  top: 2px;
 }
 .icons-item__gh:hover {
   color: var(--icongh);
@@ -1079,11 +1123,6 @@ textarea {
   position: relative;
   z-index: 15;
   margin-right: 17px;
-}
-@media (min-width: 768px) {
-  .toggle-menu {
-    margin-right: 41px;
-  }
 }
 @media (min-width: 1200px) {
   .toggle-menu {
@@ -1386,7 +1425,7 @@ textarea {
 }
 @media (min-width: 1200px) {
   .footer-main-img {
-    margin: -240px auto 0;
+    margin: -77px auto 0;
   }
 }
 .header-menu--portfolio {
@@ -1636,6 +1675,7 @@ textarea {
   background-size: auto;
   background-position: center;
   background-repeat: repeat-y;
+  overflow: hidden;
 }
 @media (min-width: 768px) {
   .how-work {
@@ -1895,8 +1935,8 @@ textarea {
 @media (min-width: 1200px) {
   .item-text {
     cursor: pointer;
-    padding-right: 17px;
-    padding-left: 17px;
+    padding-right: 41px;
+    padding-left: 41px;
   }
   .item-text:hover .hover::after {
     background-color: var(--hover);
@@ -1997,6 +2037,68 @@ textarea {
 @media (min-width: 1200px) {
   .contacts {
     padding-top: 140px;
+    padding-bottom: 153px;
+    background-image: url(../img/fon/line2.png);
+    background-size: auto;
+    background-position: center;
+    background-repeat: repeat-y;
+    background-color: #f4f8f9;
+  }
+}
+.header-nav--contacts {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 28px;
+}
+@media (min-width: 1430px) {
+  .header-nav--contacts {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (min-width: 768px) {
+  .header-nav--contacts {
+    margin-bottom: 39px;
+  }
+}
+@media (min-width: 1200px) {
+  .header-nav--contacts {
+    margin-bottom: 124px;
+  }
+}
+.works {
+  background-color: #f4f8f9;
+}
+.page {
+  padding-top: 42px;
+  padding-bottom: 60px;
+  margin: auto;
+  background-image: url(../img/fon/bgportf.png);
+  background-size: auto;
+  background-position: center;
+  background-repeat: repeat-y;
+  background-size: contain;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .page {
+    padding-top: 80px;
+    padding-bottom: 87px;
+  }
+}
+@media (min-width: 1200px) {
+  .page {
+    padding-top: 75px;
     padding-bottom: 153px;
     background-image: url(../img/fon/line2.png);
     background-size: auto;
