@@ -199,7 +199,7 @@ textarea {
 .header {
   max-width: 1600px;
   padding-top: 30px;
-  padding-bottom: 92px;
+  padding-bottom: 74px;
   margin: auto;
   background-image: url(../img/fon/line.png);
   background-size: auto;
@@ -676,7 +676,7 @@ textarea {
   }
 }
 .more {
-  margin-bottom: 29px;
+  margin-bottom: 32px;
 }
 @media (min-width: 768px) {
   .more {
@@ -764,6 +764,7 @@ textarea {
 }
 .header-nav {
   max-width: 1400px;
+  padding: 0 17px;
   margin-left: auto;
   margin-right: auto;
   display: -webkit-box;
@@ -807,7 +808,9 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 28px;
+  height: 109px;
+  background-color: white;
+  margin-bottom: 43px;
 }
 @media (min-width: 1430px) {
   .header-nav--portfolio {
@@ -817,12 +820,15 @@ textarea {
 }
 @media (min-width: 768px) {
   .header-nav--portfolio {
-    margin-bottom: 39px;
+    height: 109px;
+    background-color: white;
+    margin-bottom: 61px;
   }
 }
 @media (min-width: 1200px) {
   .header-nav--portfolio {
     margin-bottom: 70px;
+    background-color: transparent;
   }
 }
 .logo {
@@ -1333,7 +1339,7 @@ textarea {
 }
 @media (min-width: 576px) {
   .watch-works {
-    margin-left: 125px;
+    margin-left: 30px;
   }
 }
 @media (min-width: 1200px) {
@@ -2109,7 +2115,9 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 28px;
+  height: 109px;
+  background-color: white;
+  margin-bottom: 44px;
 }
 @media (min-width: 1430px) {
   .header-nav--contacts {
@@ -2119,19 +2127,22 @@ textarea {
 }
 @media (min-width: 768px) {
   .header-nav--contacts {
-    margin-bottom: 39px;
+    height: 109px;
+    background-color: white;
+    margin-bottom: 67px;
   }
 }
 @media (min-width: 1200px) {
   .header-nav--contacts {
     margin-bottom: 124px;
+    background-color: transparent;
   }
 }
 .works {
   background-color: #f4f8f9;
 }
 .page {
-  padding-top: 42px;
+  padding-top: 0px;
   padding-bottom: 60px;
   margin: auto;
   background-image: url(../img/fon/bgportf.png);
@@ -2143,7 +2154,7 @@ textarea {
 }
 @media (min-width: 768px) {
   .page {
-    padding-top: 80px;
+    padding-top: 0px;
     padding-bottom: 87px;
   }
 }
