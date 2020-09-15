@@ -676,7 +676,7 @@ textarea {
   }
 }
 .more {
-  margin-bottom: 12px;
+  margin-bottom: 29px;
 }
 @media (min-width: 768px) {
   .more {
@@ -786,6 +786,7 @@ textarea {
 @media (min-width: 768px) {
   .header-nav {
     margin-bottom: 39px;
+    padding: 0 30px;
   }
 }
 @media (min-width: 1200px) {
@@ -1089,6 +1090,14 @@ textarea {
 .icons-item__wp:first-child {
   position: relative;
   top: 2px;
+}
+.icons-item__wp-up:hover {
+  color: #0fa728;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.icons-item__wp-up:first-child {
+  position: relative;
 }
 .icons-item__gh:hover {
   color: var(--icongh);
@@ -1572,7 +1581,50 @@ textarea {
     margin-bottom: 0;
   }
 }
+.portfolio-card_descrip h3 {
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #000;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.portfolio-card_descrip h3:after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  bottom: 1px;
+  left: 0;
+  border-bottom: solid 2px #ed574f;
+  width: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.portfolio-card_descrip h3:hover:after {
+  width: 100%;
+  color: #ed574f;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.portfolio-card_descrip h3:hover {
+  color: #ed574f;
+}
+@media (min-width: 768px) {
+  .portfolio-card_descrip h3 {
+    font-size: 24px;
+  }
+}
+@media (min-width: 1200px) {
+  .portfolio-card_descrip h3 {
+    font-size: 32px;
+  }
+}
 .portfolio-card_descrip a {
+  display: block;
   position: relative;
   z-index: 2;
   margin-bottom: 10px;
@@ -1589,7 +1641,6 @@ textarea {
   z-index: 2;
   bottom: 1px;
   left: 0;
-  border-bottom: solid 2px #ed574f;
   width: 0;
   -webkit-transition: 0.5s;
   transition: 0.5s;

@@ -133,8 +133,51 @@
     }
   }
 }
-
+.portfolio-card_descrip h3{
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+  
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #000;
+    transition: 0.5s;
+  
+    &:after {
+      content: "";
+      position: absolute;
+      z-index: 2;
+      bottom: 1px;
+      left: 0;
+      border-bottom: solid 2px #ed574f;
+      width: 0;
+      
+      transition: 0.5s;
+    }
+  
+    &:hover:after {
+      width: 100%;
+      color: #ed574f;
+      transition: 0.5s;
+    }
+  
+    &:hover {
+      color: #ed574f;
+    }
+    // Планшет
+    @media (min-width: 768px) {
+      font-size: 24px;
+    }
+  
+    // Десктоп
+    @media (min-width: 1200px) {
+      font-size: 32px;
+    } 
+}
 .portfolio-card_descrip a {
+  display: block;
   position: relative;
   z-index: 2;
 
@@ -151,9 +194,7 @@
     z-index: 2;
     bottom: 1px;
     left: 0;
-    border-bottom: solid 2px #ed574f;
     width: 0;
-
     transition: 0.5s;
   }
 

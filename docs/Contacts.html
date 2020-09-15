@@ -119,20 +119,20 @@
                         id="contact-form">
                         <input type="hidden" name="project_name" value="https://github.com/ValeriyZoloto/" />
                         <input type="hidden" name="admin_email" value="leshikzoloto@gmail.com" />
-                        <input type="hidden" name="email_form" value="leshikzoloto@gmai.com" />
+                        <input type="hidden" name="email_form" value="info@github.com/ValeriyZoloto/" />
 
                         <div class="contacts-form_item">
-                            <input class="form-field" type="text" name="email" />
+                            <input class="form-field" type="email" name="email" required placeholder="" />
                             <span class="fake-placeholder">Ваш email</span>
                         </div>
 
                         <div class="contacts-form_item">
-                            <input class="form-field" type="text" name="theme" />
+                            <input class="form-field" type="text" name="theme" required placeholder="" />
                             <span class="fake-placeholder">Тема письма</span>
                         </div>
 
                         <div class="contacts-form_item">
-                            <textarea class="form-field" name="message" rows="4"></textarea>
+                            <textarea class="form-field" name="message" rows="4" required placeholder=""></textarea>
                             <span class="fake-placeholder">Сообщение</span>
                         </div>
 
@@ -179,6 +179,7 @@
         <!-- //Скрол вверх -->
 
         <script src="./libs/jquery/jquery-3.0.0.min.js"></script>
+        <script src="./libs/jquery.validate/jquery.validate/jquery.validate.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             AOS.init();
