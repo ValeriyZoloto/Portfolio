@@ -1550,9 +1550,12 @@ textarea {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  width: 255px;
   height: 51px;
   font-size: 22px;
   font-weight: 700;
+  padding-top: 7px;
+  padding-bottom: 7px;
   padding-left: 30px;
   padding-right: 30px;
   border-radius: 30px;
@@ -1570,6 +1573,16 @@ textarea {
 .more-btn:active {
   background-color: var(--cardbtnactv);
   color: #fff;
+}
+@media (min-width: 768px) {
+  .more-btn {
+    width: 255px;
+  }
+}
+@media (min-width: 1200px) {
+  .more-btn {
+    display: block;
+  }
 }
 .portfolio-card_poster:hover .more-btn {
   opacity: 1;
