@@ -10,14 +10,14 @@
   overflow: hidden;
   // Планшет
   @media (min-width: 768px) {
-    padding-top: 85px;
-    padding-bottom: 85px;
+    padding-top: 68px;
+    padding-bottom: 30px;
   }
 
   // Десктоп
   @media (min-width: 1200px) {
     padding-top: 126px;
-    padding-bottom: 117px;
+    padding-bottom: 75px;
   }
 }
 
@@ -64,7 +64,7 @@
 
   // Планшет
   @media (min-width: 768px) {
-    margin-bottom: 158px;
+    margin-bottom: 121px;
     font-size: 52px;
     font-weight: 800;
 
@@ -117,7 +117,7 @@
     position: absolute;
     left: 37px;
     bottom: 0;
-    top: 94px;
+    top: 127px;
     width: 4px;
     border-radius: 2px;
     background-color: rgb(225, 238, 244);
@@ -129,13 +129,24 @@
 
   // Планшет
   @media (min-width: 768px) {
-    padding-bottom: 45px;
+    padding-top: 29px;
+    padding-bottom: 29px;
     margin-bottom: 20px;
     position: relative;
     display: flex;
     flex-direction: row;
     max-width: 368px;
     transform: translateX(39%);
+    &:after {
+        content: "";
+        position: absolute;
+        left: 37px;
+        bottom: -32px;
+        top: 127px;
+        width: 4px;
+        border-radius: 2px;
+        background-color: rgb(225, 238, 244);
+      }
 
     &:nth-child(odd) {
       display: flex;
@@ -148,7 +159,7 @@
       content: "";
       position: absolute;
       left: 327px;
-      top: -76px;
+      top: -47px;
       width: 4px;
       height: 57px;
       background-color: rgb(225, 238, 244);
@@ -156,9 +167,10 @@
     &:nth-child(odd):after {
       content: "";
       position: absolute;
-      left: 325px;
+      left: 329px;
       bottom: 0;
-      top: 94px;
+      top: 128px;
+      height: 107px;
       width: 4px;
       border-radius: 2px;
       background-color: rgb(225, 238, 244);
@@ -194,7 +206,7 @@
       position: absolute;
       left: 488px;
       bottom: 0;
-      top: 94px;
+      top: 127px;
       width: 4px;
       border-radius: 2px;
       background-color: rgb(225, 238, 244);
@@ -301,7 +313,7 @@
   // Планшет
   @media (min-width: 768px) {
     font-size: 16px;
-    margin-bottom: 10px;
+    margin-bottom: 4px;
   }
 
   // Десктоп
