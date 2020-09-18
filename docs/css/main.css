@@ -21,6 +21,16 @@ body {
   font-size: 16px;
   position: relative;
 }
+.fix-menu.active {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  background-color: transparent;
+  -webkit-box-shadow: 0 10px 35px rgba(0, 0, 0, 0.45);
+          box-shadow: 0 10px 35px rgba(0, 0, 0, 0.45);
+}
 #page-nav {
   display: none;
 }
@@ -191,9 +201,19 @@ textarea {
     text-align: center;
   }
 }
+.title2 h1 {
+  font-size: 42px;
+  font-weight: 800;
+}
+@media (min-width: 768px) {
+  .title2 h1 {
+    font-size: 52px;
+  }
+}
 @media (min-width: 1200px) {
-  .fa-angle-double-up::before {
-    display: none;
+  .title2 h1 {
+    font-size: 64px;
+    text-align: center;
   }
 }
 .header {
@@ -511,7 +531,7 @@ textarea {
   background-color: var(--btnactv);
 }
 .button-2 {
-  padding: 15px 40px;
+  padding: 15px 37px;
   background-color: #fff;
   border: solid 4px;
   border-color: var(--btncont);
@@ -828,7 +848,7 @@ textarea {
 }
 @media (min-width: 1200px) {
   .header-nav--portfolio {
-    margin-bottom: 70px;
+    margin-bottom: 44px;
     background-color: transparent;
   }
 }
@@ -869,7 +889,7 @@ textarea {
   top: 0;
   bottom: 0;
   right: 0;
-  background-color: #fff;
+  background-color: transparent;
   z-index: 10;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1771,13 +1791,13 @@ textarea {
 @media (min-width: 768px) {
   .how-work {
     padding-top: 68px;
-    padding-bottom: 30px;
+    padding-bottom: 34px;
   }
 }
 @media (min-width: 1200px) {
   .how-work {
-    padding-top: 126px;
-    padding-bottom: 75px;
+    padding-top: 120px;
+    padding-bottom: 48px;
   }
 }
 .howwork-content {
@@ -1830,7 +1850,7 @@ textarea {
 }
 @media (min-width: 768px) {
   .item-title {
-    margin-bottom: 121px;
+    margin-bottom: 144px;
     font-size: 52px;
     font-weight: 800;
   }
@@ -1847,7 +1867,7 @@ textarea {
 }
 @media (min-width: 1200px) {
   .item-title {
-    margin-bottom: 161px;
+    margin-bottom: 132px;
     font-size: 64px;
   }
   .item-title:after {
@@ -1900,9 +1920,9 @@ textarea {
 }
 @media (min-width: 768px) {
   .work-content_item {
-    padding-top: 29px;
-    padding-bottom: 29px;
-    margin-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 6px;
+    margin-bottom: 15px;
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1962,7 +1982,7 @@ textarea {
   .work-content_item {
     max-width: 530px;
     padding-bottom: 60px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     -webkit-transform: translateX(39%);
             transform: translateX(39%);
   }
@@ -2031,8 +2051,8 @@ textarea {
 }
 @media (min-width: 768px) {
   .item-text {
-    padding-right: 25px;
-    padding-left: 25px;
+    padding-right: 18px;
+    padding-left: 18px;
   }
 }
 @media (min-width: 1200px) {
@@ -2180,7 +2200,7 @@ textarea {
 }
 @media (min-width: 1200px) {
   .header-nav--contacts {
-    margin-bottom: 124px;
+    margin-bottom: 94px;
     background-color: transparent;
   }
 }
@@ -2206,8 +2226,8 @@ textarea {
 }
 @media (min-width: 1200px) {
   .page {
-    padding-top: 75px;
-    padding-bottom: 153px;
+    padding-top: 50px;
+    padding-bottom: 150px;
     background-image: url(../img/fon/line2.png);
     background-size: auto;
     background-position: center;

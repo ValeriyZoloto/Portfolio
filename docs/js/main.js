@@ -1,4 +1,13 @@
 $(document).ready(function () {
+    // Показать fix-menu 
+    window.addEventListener('scroll', function(){
+     const fixMenu = document.querySelector('.fix-menu');
+     if(this.pageYOffset > 50){
+        fixMenu.classList.add('active');
+     } else{
+        fixMenu.classList.remove('active'); 
+     }
+    });
      //  PAGE NAV
 
      $("#page-nav").onePageNav({
@@ -141,3 +150,17 @@ function ajaxFormSubmit() {
     // Чтобы по submit больше ничего не выполнялось- делаем возврат false,  чтобы прервать цепочку срабатывания остальных функций
     return false;
 }
+//  Иконка Вверх top button
+$("#backTop").hide();
+$(window).scroll( function (){
+
+    if($(this).scrollTop() > 200){
+        $("#backTop").fadeIn();
+    }
+    else{
+         $("#backTop").fadeOut();
+    }
+})
+
+
+
