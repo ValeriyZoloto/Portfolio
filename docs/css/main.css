@@ -58,6 +58,8 @@ body {
 }
 #page-nav li.active {
   background-color: #89b4cb;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(11, 95, 139, 0.712);
+          box-shadow: 0px 0px 15px 0px rgba(11, 95, 139, 0.712);
 }
 #backTop a {
   color: #ea736d;
