@@ -216,6 +216,11 @@ textarea {
     text-align: center;
   }
 }
+@media (min-width: 1200px) {
+  .fa-angle-double-up::before {
+    display: none;
+  }
+}
 .header {
   max-width: 1600px;
   padding-top: 30px;
