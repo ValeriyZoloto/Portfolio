@@ -100,35 +100,38 @@ for (let item of formInputs) {
     })
 };
  // FORM VALIDATE
- $("#contacts-form").validate({
-    rules: {
-        email: {
-            required: true,
-            email: true
+ if($("#contacts-form")){
+    $("#contacts-form").validate({
+        rules: {
+            email: {
+                required: true,
+                email: true
+            },
+            theme: {
+                required: true
+            },
+            message: {
+                required: true
+            }
         },
-        theme: {
-            required: true
-        },
-        message: {
-            required: true
+        messages: {
+            email: {
+                required: "Введите Ваш email",
+                email: "Отсутствует символ @"
+            },
+            theme: {
+                required: "Введите тему сообщения"
+            },
+            message: {
+                required: "Введите текст сообщения"
+            }
+        }, 
+        submitHandler: function (form) {
+            ajaxFormSubmit();
         }
-    },
-    messages: {
-        email: {
-            required: "Введите Ваш email",
-            email: "Отсутствует символ @"
-        },
-        theme: {
-            required: "Введите тему сообщения"
-        },
-        message: {
-            required: "Введите текст сообщения"
-        }
-    }, 
-    submitHandler: function (form) {
-        ajaxFormSubmit();
-    }
-});
+    });
+ }
+ 
 // Функция AJAX запроса на сервер
 function ajaxFormSubmit() {
     let string = $("#contacts-form").serialize();  // Сохраняем  данные, введенные в форму в строку.
@@ -161,6 +164,4 @@ $(window).scroll( function (){
          $("#backTop").fadeOut();
     }
 })
-
-
 

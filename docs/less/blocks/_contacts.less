@@ -34,7 +34,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 109px;
     background-color: white;
     margin-bottom: 44px;
   
@@ -45,14 +44,13 @@
   
     // Планшет
     @media (min-width: 768px) {
-      height: 109px;
       background-color: white;
       margin-bottom: 67px;
     }
   
     // Десктоп
     @media (min-width: 1200px) {
-      margin-bottom: 94px;
+      margin-bottom: 125px;
       background-color:transparent;
     }
   }
@@ -78,7 +76,7 @@
   
     // Десктоп
     @media (min-width: 1200px) {
-      padding-top: 50px;
+      padding-top: 75px;
       padding-bottom: 150px;
   
       background-image: url(../img/fon/line2.png);
@@ -415,23 +413,26 @@ textarea,
 input {
   width: 100%;
   display: block;
-  padding: 19px 5px 29px;
+  height: 70px;
   border: 0px;
   border-bottom: 2px solid #eaeaea;
-
+  
   font-size: 20px;
   outline: none;
   cursor: pointer;
 
   // Планшет
   @media (min-width: 768px) {
-    padding: 19px 5px 29px;
+  
   }
 
   // Десктоп
   @media (min-width: 1200px) {
-    padding: 20px 5px 24px;
+   
   }
+}
+textarea{
+    height: 136px;
 }
 
 .form-field {
@@ -470,7 +471,7 @@ input {
 .fake-placeholder.active {
   color: #ed9626;
   font-size: 16px;
-  top: 2px;
+  top: -15px;
   transition: 0.3s;
 }
 
