@@ -842,7 +842,6 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: white;
   margin-bottom: 43px;
   height: 100%;
 }
@@ -854,7 +853,6 @@ textarea {
 }
 @media (min-width: 768px) {
   .header-nav--portfolio {
-    background-color: white;
     margin-bottom: 61px;
   }
 }
