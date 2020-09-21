@@ -29,7 +29,9 @@ body {
   top: 0;
   right: 0;
   z-index: 100;
-  background-color: rgba(244, 248, 249, 0.95);
+  background-color: rgba(244, 248, 249, 0.75);
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
   -webkit-box-shadow: 0 10px 35px rgba(0, 0, 0, 0.45);
           box-shadow: 0 10px 35px rgba(0, 0, 0, 0.45);
 }
@@ -114,6 +116,8 @@ body {
 }
 #overlay.active {
   display: block;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
 }
 a,
 a:hover {
@@ -939,7 +943,9 @@ textarea {
 .header-menu.active {
   -webkit-transform: translateX(0);
           transform: translateX(0);
-  background-color: #fff;
+  background-color: #ffffffba;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
 }
 .header-menu a.active {
   color: #ea736d;
